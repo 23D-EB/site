@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestras Certificaciones</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+            background-image: url(imagenes/A_certificaciones.png); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        
+        header {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        header p {
+            color: rgb(255, 255, 255);
+            font-size: 100px;
+        }
+
+        
+        .certificaciones {
+            margin-top: 50px;
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            border: 2px solid #f8f8f8;
+            border-radius: 10px;
+            background-color: rgba(249, 249, 249, 0.8); 
+            text-align: center;
+        }
+
+        .certificaciones h2 {
+            color: #000000;
+        }
+
+        .certificaciones p {
+            font-size: 16px;
+            color: #000000;
+            text-align: justify;
+        }
+
+        .certificaciones-lista {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .certificacion-item {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 2px solid #060606;
+            border-radius: 10px;
+        }
+
+        .certificacion-item img {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .certificacion-item h3 {
+            color: #000000;
+            font-size: 18px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin: 20px auto;
+            background-color: #7c7b7b;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #6b0606;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <p>CYBERSECURITY YOURS</p>
+    </header>
+
+    
+    <section class="certificaciones container">
+        <h2>Nuestras Certificaciones</h2>
+        <p>
+            Contamos con certificaciones reconocidas a nivel mundial que garantizan la calidad y seguridad de nuestros servicios.
+             Estas certificaciones avalan nuestro compromiso con la ciberseguridad y la protección de la información.
+        </p>
+
+        <div class="certificaciones-lista">
+            
+            <div class="certificacion-item">
+                <img src="imagenes/iso.jpg" alt="">
+                <h3>ISO 27001</h3>
+                <p>Norma internacional para la gestión de la seguridad de la información.</p>
+            </div>
+
+            
+            <div class="certificacion-item">
+                <img src="imagenes/cissp.jpg" alt="">
+                <h3>CISSP</h3>
+                <p>Certificación en seguridad de la información otorgada por (ISC).</p>
+            </div>
+
+            
+            <div class="certificacion-item">
+                <img src="imagenes/ceh.jpg" alt="">
+                <h3>CEH</h3>
+                <p>Certified Ethical Hacker, certificación en hacking ético y pruebas de penetración.</p>
+            </div>
+
+            
+            <div class="certificacion-item">
+                <img src="imagenes/gdpr.jpg" alt="">
+                <h3>GDPR Compliance</h3>
+                <p>Cumplimiento con el Reglamento General de Protección de Datos de la UE.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <button onclick="window.location.href='index.html'">Volver a Inicio</button>
+    </section>
+
+</body>
+</html>

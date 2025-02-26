@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif ;
+            min-height: 100vh ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+            background-image: url(imagenes/contacto.2.png);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        header p {
+            color: rgb(225, 225, 225);
+            font-size: 70px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 2px solid #a0a0a0;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+        }
+
+
+        form{
+            padding: 50px 50px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            text-align: center;
+            width: 340px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .input-group{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        h2{
+            color:rgb(0, 0, 0);
+            font-size: 35px;
+        }
+
+        label{
+            color:rgb(0, 0, 0);
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        
+        button {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin: 20px auto;
+            background-color: #7c7b7b;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input, textarea{
+            padding: 17px 25px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            background-color: aliceblue;
+            border: 2px solid aliceblue;
+            color: rgb(0, 0, 0);
+            outline: none;
+        }
+
+        input::placeholder, textarea::placeholder{
+            color: #7ea380;
+        }
+
+        .form-txt {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .form-txt a{
+            color: #76b2b7;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .map-container {
+            text-align: center;
+        }
+
+        .reviews {
+            text-align: center;
+        }
+
+        .btn {
+            font-size: 16px;
+            color: aliceblue;
+            border: 0;
+            border-radius: 25px;
+            background-color: #51D94C;
+            box-shadow: 0 0 20px rgba(25, 254, 0, 0.4); 
+            cursor:pointer;
+        }
+
+        button:hover {
+            background-color: #6b0606;
+        }
+
+        @media(max-width:991px){
+            body{
+                padding: 30px;
+            }
+            form {
+                padding: 50px 30px;
+                width: 100%;
+            }
+
+            input{
+                padding: 15px;
+            }
+
+
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    
+    <header>
+        <p>Contacto</p>
+    </header>
+
+    
+
+    <form action="https://formsubmit.co/ramoslizeth61@gmail.com " method="POST"> 
+        <h2>Contacto</h2>
+
+        <div class="input-group">
+            <label for="name">NOMBRE</label>
+            <input type="text" name="name" id="name" placeholder="Nombre">
+
+            <label for=" email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="messaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
+
+            <div clas="forms-txt">
+                <a href="#">Politica de privacidad</a>
+                <a href="#">Terminos y condiciones</a>
+
+            </div>
+
+            <input class="btn" type="submit" value="Enviar">
+
+
+        </div>
+
+
+    </form>
+
+    
+    <section class="container map-container">
+        <h2>Ubicación</h2>
+        <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-99.34155195951463%2C19.612296432924033%2C-99.33855861425401%2C19.61377701478308&amp;layer=mapnik" style="border: 1px solid black"></iframe>
+        <br/>
+        <small><a href="https://www.openstreetmap.org/?#map=19/19.613037/-99.340055">Ver el mapa más grande</a></small>
+    </section>
+
+    
+    <section class="container reviews">
+        <h2>Comentarios y Reseñas</h2>
+        <p>⭐⭐⭐⭐⭐ "Excelente servicio, muy profesionales y atentos." - Sandra Alcantara</p>
+        <p>⭐⭐⭐⭐ "Me ayudaron a mejorar la seguridad de mi empresa." - Daniela Figueroa</p>
+        <p>⭐⭐⭐⭐⭐ "Totalmente recomendado, soluciones innovadoras y efectivas." - Pineda Sebastian</p>
+    </section>
+
+    
+    <section class="container">
+        <button onclick="window.location.href='index.html'">Volver a Inicio</button>
+    </section>
+
+
+</body>
+</html>
